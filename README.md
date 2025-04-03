@@ -39,7 +39,6 @@ La estructura principal dentro de `ln-challenge-app` es:
 
 ```
 ./
-├── public/            # Archivos estáticos (imágenes, fuentes, etc.)
 ├── src/               # Código fuente de la aplicación
 │   ├── app/           # Next.js App Router
 │   │   ├── [lang]/    # Rutas dinámicas por idioma (e.g., /es, /en)
