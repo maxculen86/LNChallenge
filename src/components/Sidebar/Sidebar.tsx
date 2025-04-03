@@ -1,10 +1,7 @@
 import { MostReadRecipes } from '@/components/MostReadRecipes/MostReadRecipes'
-import { Article } from '@/types' // Assuming MostReadRecipes needs Article type
 
 type SidebarProps = {
   mostReadRecipesTitle: string;
-  // Add articles prop if MostReadRecipes actually needs them
-  // articles: Article[];
 }
 
 export function Sidebar({ mostReadRecipesTitle }: SidebarProps) {
