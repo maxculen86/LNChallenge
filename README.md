@@ -92,6 +92,12 @@ cp .env.example .env.local
 NEXT_PUBLIC_API_ENDPOINT=https://tu-api-endpoint.com/
 ```
 
+3. **Para ejecutar las pruebas:** Crea un archivo `.env.test` en la raíz del proyecto (`ln-challenge-app/`) con el endpoint de prueba:
+
+```
+NEXT_PUBLIC_API_ENDPOINT=https://tu-api-endpoint.com/
+```
+
 ## Instalación
 
 ```bash
