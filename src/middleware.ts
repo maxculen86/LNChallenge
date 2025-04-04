@@ -33,7 +33,8 @@ export function middleware(request: NextRequest) {
 
   // Redirect if there is no locale prefix
   if (pathnameIsMissingLocale) {
-    const locale = getLocale(request) // Determine preferred locale based on cookie/header
+    // Always use defaultLocale for the root path, otherwise determine from request
+    const locale = pathname === '/' ? defaultLocale : getLocale(request);
 
     // Ensure the pathname used for redirection doesn't double the slash if it's not the root
     const targetPath = pathname === '/' ? '' : pathname;
